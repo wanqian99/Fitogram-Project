@@ -151,5 +151,15 @@ body {
 }
 
 .backBtn {
+    position: absolute;
+    margin: 3%;
+}
+
+.backBtn a, .backBtn a:visited {
+    border: 2px solid rgb(121,145,139);
+    border-radius: 25px;
+    padding: 5px 15px;
+    font-size: 15px;
+    text-decoration: none;
     color: rgb(121,145,139);
 }
