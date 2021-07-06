@@ -1,0 +1,155 @@
+
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:white;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    /* Padding to avoid the "unsafe" areas behind notches in the screen */
+    padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    width:100%;
+    height: auto;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.login1_logo {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: auto;
+}
+
+.run_icon {
+    width: 90%;
+    height: auto;
+    margin: 15% 3%;
+    opacity: 0.4;
+}
+
+.login1 {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    margin-top: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
+}
+
+.loginType {
+    border-color: rgb(121,145,139);
+    border-width: medium;
+    background-color: white;
+    border-radius: 15px;
+    margin: 2% 0%;
+    width: 100%;
+}
+
+.loginType:hover {
+    background-color: rgb(121,145,139);
+    color: white;
+}
+
+.typeText {
+    text-align: center;
+    font-size: 30px;
+    margin: 2%;
+}
+
+
+/*  login.html    */
+.login2_logo {
+    margin-top: 10%;
+    margin-left: 33%;
+    margin-right: 33%;
+    width: 34%;
+    height: auto;
+}
+
+.loginInfo {
+    position: absolute;
+    margin-top: 90%;
+    width: 100%;
+    height: auto;
+}
+
+.loginInfo i {
+    font-size: 45px;
+    width: 12%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    vertical-align: bottom;
+    color: rgb(121,145,139);
+}
+
+.loginInfo input[type=text], .loginInfo input[type=password]{
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    font-size: 20px;
+    padding-left: 5%;
+    width: 63%;
+    height: 35px;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: rgb(121,145,139);
+}
+
+/* Darker background when user is typing */
+.loginInfo input[type=text]:focus, .loginInfo input[type=password]:focus {
+    background-color: aliceblue;
+    color: black;
+}
+
+.loginBtn {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 87%;
+    height: 50px;
+    border-width: 0;
+    border-radius: 40px;
+    background-color: rgb(121,145,139);
+}
+
+.loginBtn p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+}
+
+.loginInfo input[type=checkbox] {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.register {
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
+    font-size: 27px;
+}
+
+.register a, .register a:visited{
+    color: rgb(121,145,139);
+}
+
+.backBtn {
+    color: rgb(121,145,139);
+}
