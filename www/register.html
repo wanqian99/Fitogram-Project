@@ -21,25 +21,27 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
-        
     </head>
     <body>
         <div class="background">
             <img src="img/logo1.png" alt="Fitogram logo" class="login2_logo">
             <img src="img/run.png" alt="Run" class="run_icon">
         </div>
-        <div class="loginInfo">
+        <div class="registerInfo">
+            <p>Enter your personal details</p>
             <i class="fas fa-user-alt"></i>
             <input type="text" placeholder="Username" name="username" required>
             <i class="fas fa-at"></i>
             <input type="text" placeholder="Email" name="email" required>
-            <i class="fas fa-calendar-alt"></i>
-            <input type="text" placeholder="Age" name="age" required>
+            <i class="fas fa-phone-alt"></i>
+            <input type="text" placeholder="Mobile number" name="number" required>
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="psw" required>
-            <button type="submit" class="loginBtn">
-                <p>Register</p>
-            </button>
+            <form method="get" action="home.html">
+                <button type="submit" class="registerBtn">
+                    <p>Register</p>
+                </button>
+            </form>
         </div>
         <div class="backBtn">
             <a href="login.html">BACK</a>

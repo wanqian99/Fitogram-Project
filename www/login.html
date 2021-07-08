@@ -21,7 +21,6 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="cordova.js"></script>
         <script src="js/index.js"></script>
-        
     </head>
     <body>
         <div class="background">
@@ -33,9 +32,11 @@
             <input type="text" placeholder="Username" name="username" required>
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="psw" required>
-            <button type="submit" class="loginBtn">
-                <p>Lets go!</p>
-            </button>
+            <form method="get" action="home.html">
+                <button type="submit" class="loginBtn">
+                    <p>Lets go!</p>
+                </button>
+            </form>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>

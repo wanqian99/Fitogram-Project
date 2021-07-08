@@ -15,6 +15,9 @@ body {
     height: auto;
 }
 
+/**********index.html**********/
+
+/*Set the background image and fitogram logo*/
 .background {
     position: absolute;
     width: 100%;
@@ -22,6 +25,7 @@ body {
     z-index: -1;
 }
 
+/*Set the fitogram logo*/
 .login1_logo {
     margin-top: 20%;
     margin-left: 10%;
@@ -30,6 +34,7 @@ body {
     height: auto;
 }
 
+/*Set the background image*/
 .run_icon {
     width: 90%;
     height: auto;
@@ -37,6 +42,7 @@ body {
     opacity: 0.4;
 }
 
+/*Set the container for login type*/
 .login1 {
     position: absolute;
     width: 80%;
@@ -47,6 +53,7 @@ body {
     font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
 }
 
+/*Style the login type buttons*/
 .loginType {
     border-color: rgb(121,145,139);
     border-width: medium;
@@ -56,11 +63,13 @@ body {
     width: 100%;
 }
 
+/*Style the login type buttons when hovered*/
 .loginType:hover {
     background-color: rgb(121,145,139);
     color: white;
 }
 
+/*Style the button text*/
 .typeText {
     text-align: center;
     font-size: 30px;
@@ -68,7 +77,12 @@ body {
 }
 
 
-/*  login.html    */
+
+
+
+/**********login.html**********/
+
+/*Style the button text*/
 .login2_logo {
     margin-top: 10%;
     margin-left: 33%;
@@ -77,6 +91,7 @@ body {
     height: auto;
 }
 
+/*container for login info*/
 .loginInfo {
     position: absolute;
     margin-top: 90%;
@@ -84,6 +99,7 @@ body {
     height: auto;
 }
 
+/*login info icons styling*/
 .loginInfo i {
     font-size: 45px;
     width: 12%;
@@ -93,6 +109,7 @@ body {
     color: rgb(121,145,139);
 }
 
+/*login info input box styling*/
 .loginInfo input[type=text], .loginInfo input[type=password]{
     font-family: 'Open Sans', 'Roboto', 'sans-serif';
     font-size: 20px;
@@ -113,6 +130,7 @@ body {
     color: black;
 }
 
+/*Style the login button*/
 .loginBtn {
     float: left;
     margin-left: 5%;
@@ -124,6 +142,7 @@ body {
     background-color: rgb(121,145,139);
 }
 
+/*Style the login button text*/
 .loginBtn p{
     font-size: 24px;
     letter-spacing: 2px;
@@ -134,27 +153,19 @@ body {
     margin-top: 3%;
 }
 
+/*Style the checkbox*/
 .loginInfo input[type=checkbox] {
     margin-left: 5%;
     margin-top: 5%;
 }
 
-.register {
-    margin-top: 10%;
-    margin-left: 5%;
-    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
-    font-size: 27px;
-}
-
-.register a, .register a:visited{
-    color: rgb(121,145,139);
-}
-
+/*Style the back button*/
 .backBtn {
     position: absolute;
     margin: 3%;
 }
 
+/*Style the button text after visited*/
 .backBtn a, .backBtn a:visited {
     border: 2px solid rgb(121,145,139);
     border-radius: 25px;
@@ -162,4 +173,218 @@ body {
     font-size: 15px;
     text-decoration: none;
     color: rgb(121,145,139);
+}
+
+/*Style the register prompt text*/
+.register {
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
+    font-size: 27px;
+    
+}
+
+/*Style the register prompt text after visited*/
+.register a, .register a:visited{
+    color: rgb(121,145,139);
+}
+
+
+
+
+
+/**********register.html**********/
+
+/*container for register information*/
+.registerInfo {
+    position: absolute;
+    margin-top: 60%;
+    width: 100%;
+    height: auto;
+}
+
+/*p text for register information*/
+.registerInfo p {
+    font-size: 26px;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
+}
+
+/*Style the icon for register information*/
+.registerInfo i {
+    font-size: 45px;
+    width: 12%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    vertical-align: bottom;
+    color: rgb(121,145,139);
+}
+
+/*Style the input box*/
+.registerInfo input[type=text], .registerInfo input[type=password]{
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    font-size: 20px;
+    padding-left: 5%;
+    width: 63%;
+    height: 35px;
+    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 40px;
+    border-width: 2px;
+    border-color: rgb(121,145,139);
+}
+
+/* Darker background when user is typing */
+.registerInfo input[type=text]:focus, .registerInfo input[type=password]:focus {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Style the register button */
+.registerBtn {
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 87%;
+    height: 50px;
+    border-width: 0;
+    border-radius: 40px;
+    background-color: rgb(121,145,139);
+}
+
+/* Style the register button text*/
+.registerBtn p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+}
+
+
+
+
+
+/**********home.html**********/
+
+/*home container*/
+.homelogo_container {
+    position: fixed;
+    margin-top: 2%;
+    margin-left: 4%;
+}
+
+/*style fitogram logo*/
+.home_logo1 {
+    width: 40%;
+}
+
+/*style fitogram logo*/
+.home_logo2 {
+    width: 15%;
+    margin-left: 35%;
+}
+
+/*style home contents*/
+.homeContent {
+    position: absolute;
+    width: 95%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Slideshow images */
+.mySlides img {
+    width: 90%;
+    height: 260px;
+    border: 3px solid rgb(121,145,139);
+    border-radius: 5%;
+}
+
+/* Caption text */
+.capText {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 16px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* container for dots */
+.dotContainer {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 70%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* change colour when dot is active */
+.active {
+  background-color: darkgray;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.calorieBar p{
+    position: absolute;
+    margin-top: 5%;
+    font-size: 26px;
+    font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
+}
+
+.calorieBar .calorieText {
+    position: absolute;
+    font-size: 34px;
+    margin-left: 40%;
+    margin-top: 3%;
+    color: rgb(121,145,139);
+    font-weight: bold;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+    
 }
