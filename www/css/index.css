@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', 'Roboto', 'sans-serif';
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -273,9 +273,10 @@ body {
 
 /*home container*/
 .homelogo_container {
-    position: fixed;
+    position: absolute;
     margin-top: 2%;
     margin-left: 4%;
+    background-color: white;
 }
 
 /*style fitogram logo*/
@@ -333,7 +334,7 @@ body {
 /* container for dots */
 .dotContainer {
     position: absolute;
-    margin-top: 270px;
+    margin-top: 275px;
     margin-left: 70%;
 }
 
@@ -371,20 +372,399 @@ body {
   to {opacity: 1}
 }
 
-.calorieBar p{
+/* Style calorie text */
+.calorieContainer .calGoal{
     position: absolute;
-    margin-top: 5%;
-    font-size: 26px;
+    margin-top: 3%;
+    margin-bottom: 0%;
+    font-size: 24px;
     font-family: 'Open Sans Condensed', 'Open Sans', 'Roboto', 'sans-serif' ;
 }
 
-.calorieBar .calorieText {
+/* Style calorie text */
+.calorieContainer .calorieText {
     position: absolute;
-    font-size: 34px;
-    margin-left: 40%;
-    margin-top: 3%;
+    font-size: 32px;
+    margin-left: 38%;
+    margin-top: 1%;
+    margin-bottom: 0%;
     color: rgb(121,145,139);
     font-weight: bold;
     font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
     
 }
+
+/* container for caloriebar */
+.barContainer {
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 0%;
+    width: 90%;
+    height: auto;
+}
+
+/* Style calorie bar */
+.bar1 {
+    position: absolute;
+    height: 6px;
+    width: 78%;
+    background-color: rgb(241,208,176);
+    display: inline-block;
+}
+
+/* Style calorie bar */
+.bar2 {
+    position: absolute;
+    height:6px;
+    width: 22%;
+    margin-left: 78%;;
+    background-color: lightgray;
+    display: inline-block;
+}
+
+/* Style calorie remaining text */
+.calRemain {
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 60%;
+    color: darkgray;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+/* contains activity and posts */
+.activityContainer {
+    width: 90%;
+    height: auto;
+}
+
+/* Style activity header */
+.activityHeader {
+    margin-top: 24%;
+    font-size: 28px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+/* Style the posts */
+.posts {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border: 2px solid rgb(121,145,139);
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+/* align the post */
+.postAlign {
+    float: left;
+    width: 47%;
+    margin-left: 3%;
+    margin-top: 3%;
+    font-size: 18px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+/* Style and align the post image */
+.postAlign img {
+    width: 100%;
+    height: auto;
+    margin-bottom: auto;
+}
+
+/* Style and align the user icon */
+.postAlign i {
+    float: left;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+/* Style and align the user name */
+.postAlign p {
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+/* Style and align the text */
+.postAlign span {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+/* footer container */
+.footerNav {
+    position: fixed;
+    float: left;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 5%;
+    width: 100%;
+    background-color: white;
+    border: 2px solid rgb(121,145,139);
+}
+
+/* align icons */
+.footerCol {
+    float: left;
+    width: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* align icons */
+.footerCol img {
+    float: left;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* align icons text */
+.footerCol p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+/* align home icon */
+.homeBtn {
+    position: absolute;
+    border-radius: 50%;
+    width: 12%;
+    height: auto;
+    padding: 5%;
+    padding-top: 3%;
+    padding-bottom: 7%;
+    top: 0%;
+    left: 39%;
+    margin-bottom: 0%;
+    background-color: rgb(191,205,196);
+    z-index: -1;
+}
+
+/* align chat icons */
+.chat {
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    background-color: white;
+    border: 2px solid rgb(241,208,176);
+    border-radius: 50%;
+    width: 12%;
+    padding: 4%;
+    padding-top: 4.5%;
+    padding-bottom: 3.5%;
+}
+
+/* align chat icons */
+.chat img {
+    width: 100%;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Add styles to the form container */
+.form-container {
+    border: 3px solid rgb(241,208,176);
+    border-radius: 15px;
+    width: 90%;
+    height: 70%;
+    margin: 20% auto;
+    background-color: white;
+}
+
+.form-container img {
+    float: left;
+    width: 12%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.form-container .chatTitle {
+    float: left;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 65%;
+    font-size: 22px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.form-container .selectType {
+    float: left;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    width: 65%;
+    font-size: 22px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.form-container .chatType {
+    float: left;
+    width: 37%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-bottom: 25%;
+    border: 3px solid rgb(223,163,147);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.form-container .chatType p {
+    float: left;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    width: 70%;
+    font-size: 22px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.form-container .chatType img {
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 35%;
+    height: 50px;
+}
+
+/* Style the cancel button */
+.form-container .cancel {
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+    padding: 0;
+    background-color: white;
+    border: none;
+    font-size: 24px;
+}
+
+.form-container .chatFAQ {
+    background-color: rgb(223,163,147);
+    border: none;
+    border-radius: 25px;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 3%;
+    font-size: 22px;
+    font-weight: bolder;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.form-container .chatFAQ a,
+.form-container .chatFAQ a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.trainerChatMsg .title,
+.nutritionistChatMsg .title {
+    margin-top: 5%;
+    margin-left: 20%;
+    font-size: 22px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.trainerChatMsg .topchatline,
+.nutritionistChatMsg .topchatline {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    height: auto;
+    border: 1.5px solid rgb(241,208,176);
+}
+
+.trainerChatMsg .msgleft,
+.nutritionistChatMsg .msgleft{
+    display: inline;
+    float: right;
+    margin-left: 30%;
+    margin-right: 2%;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    border: 3px solid rgb(223,163,147);
+    border-radius: 20px 0px 20px 20px;
+    padding: 5px 12px;
+    font-size: 18px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.trainerChatMsg .msgright,
+.nutritionistChatMsg .msgright{
+    display: inline;
+    float: left;
+    margin-left: 2%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: 3px solid rgb(223,163,147);
+    border-radius: 0px 20px 20px 20px;
+    padding: 5px 12px;
+    font-size: 18px;
+    font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
+}
+
+.trainerChatMsg .bottomchatline,
+.nutritionistChatMsg .bottomchatline {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: auto;
+    bottom: 28%;
+    margin-left: 5%;
+    height: auto;
+    border: 1.5px solid rgb(241,208,176);
+}
+
+.trainerChatMsg .msgInput,
+.nutritionistChatMsg .msgInput {
+    position: absolute;
+    width: 68%;
+    height: 30px;
+    bottom: 21.8%;
+    right: 7%;
+    border: 3px solid rgb(223,163,147);
+    border-radius: 20px;
+    font-size: 20px;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+}
+
+.trainerChatMsg i,
+.nutritionistChatMsg i {
+    position: absolute;
+    left: 8%;
+    bottom: 22.3%;
+    font-size: 35px;
+    color: rgb(223,163,147);
+}
+
+/*dark green*/
+background-color: rgb(121,145,139);
+
+/*light green*/
+background-color: rgb(139,185,168);
+
+/*lightest green*/
+background-color: rgb(191,205,196);
+
+/*yellow*/
+background-color: rgb(241,208,176);
+
+/*pink*/
+background-color: rgb(223,163,147);

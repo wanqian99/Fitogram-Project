@@ -6,12 +6,12 @@
         <meta name="keywords" content="Health, Fitness, Lifestyle">
         <meta name="description" content="This is an app for Health and Fitness.">
         <meta name="author" content="Gao WanQian">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
         <meta name=”robots” content=”noindex, nofollow”>
         <meta name="color-scheme" content="light dark">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="format-detection" content="telephone=no">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com https://https://www.w3schools.com">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline'">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -27,10 +27,16 @@
             <img src="img/logo4.png" alt="Fitogram logo" class="home_logo1">
             <img src="img/logo3.png" alt="Fitogram logo" class="home_logo2">
         </div>
+        
+        
+        <div class="backBtn" style="position: absolute">
+            <a href="login.html">BACK</a>
+        </div>
+        
+        
         <div class="homeContent">
             <div class="slideshow-container">
-                
-                <div class="dotContainer" style="text-align:center">
+                <div class="dotContainer">
                   <span class="dot"></span> 
                   <span class="dot"></span> 
                   <span class="dot"></span> 
@@ -53,12 +59,149 @@
                   <img src="img/phd.png">
                   <div class="capText">Caption Three</div>
                 </div>
+            </div>
+            <div class="calorieContainer">
+                <p class="calGoal">My calorie goal is</p>
+                <p class="calorieText">1725</p>
+                <div class="barContainer">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                </div>
+                <p class="calRemain">675 remaining</p>
+            </div>
+            <div class="activityContainer">
+                <p class="activityHeader">Activity</p>
                 
-                <div class="calorieBar">
-                    <p>My calorie goal is</p>
-                    <p class="calorieText">1725</p>
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                <br><br><br><br><br>
+            </div>
+            <button id="chat_icon" onclick="openForm()">
+                <div class="chat">
+                    <img src="img/chat.png">
+                </div>
+            </button>
+            <div class="chat-popup" id="myForm">
+                <div class="form-container">
+                    <button type="button" class="btn cancel" onclick="closeForm()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <img src="img/chat.png">
+                    <p class="chatTitle" id="chattxt">Have questions? <br> Seek help from our certified trainer and nutritionist!</p>
+                    <p class="selectType" id="seltype">Select one of the following:</p>
+                    
+                    <div class="chatType" id="trainerChat" onclick="trainer()">
+                        <p>Certified<br>Trainer</p>
+                        <img src="img/fitness.png">
+                    </div>
+                    <div class="chatType" id="nutritionistChat" onclick="nutritionist()">
+                        <p>Certified<br>Nutritionist</p>
+                        <img src="img/nutrition.png">
+                    </div>
+                    <button class="chatFAQ" id="chatfaq">
+                        <a href="faq.html">FAQ</a>
+                    </button>
+                    
+                    <div class="trainerChatMsg" id="trainerchatmsg">
+                        <p class="title">Certified Trainer</p>
+                        <span class="topchatline"></span>
+                        <p class="msgleft">Hello! I need some advice on workout routines.</p>
+                        <p class="msgright">Hi, this is John, your fitness instructor. How may i assist you?</p>
+                        <p class="msgleft">I would like to have a customised workout routine that suits me.</p>
+                        <span class="bottomchatline"></span>
+                        <i class="far fa-smile"></i>
+                        <input type="text" class="msgInput" placeholder="Message...">
+                    </div>
+                    <div class="nutritionistChatMsg" id="nutritionistchatmsg">
+                        <p class="title">Certified Nutritionist</p>
+                        <span class="topchatline"></span>
+                        <p class="msgleft">Hello! I need some advice on my diet plan.</p>
+                        <p class="msgright">Hi, this is Alice, your nutritionist. How may i assist you?</p>
+                        <p class="msgleft">I would like to have a customised diet plan that fits my lifestyle.</p>
+                        <span class="bottomchatline"></span>
+                        <i class="far fa-smile"></i>
+                        <input type="text" class="msgInput" placeholder="Message...">
+                    </div>
                 </div>
             </div>
         </div>
     </body>
+    <footer>
+        <div class="footerNav">
+            <div class="footerCol">
+                <a href="log.html">
+                    <img src="img/log_light.png">
+                </a>
+                <p>Logs</p>
+            </div>
+            <div class="footerCol">
+                <a href="explore.html">
+                    <img src="img/search_light.png">
+                </a>
+                <p>Explore</p>
+            </div>
+            <div class="footerCol">
+                <a href="home.html">
+                    <span class="homeBtn">
+                        <img src="img/home_dark.png">
+                    </span>
+                </a>
+                <br>
+                <p>Home</p>
+            </div>
+            <div class="footerCol">
+                <a href="plan.html">
+                    <img src="img/plan_light.png">
+                </a>
+                <p>Plans</p>
+            </div>
+            <div class="footerCol">
+                <a href="profile.html">
+                    <img src="img/user_light.png">
+                </a>
+                <p>Profiles</p>
+            </div>
+        </div>
+    </footer>
 </html>
