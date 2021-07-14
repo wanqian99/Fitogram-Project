@@ -19,6 +19,8 @@
 
 // Wait for the deviceready event before using any of Cordova's device APIs.
 // See https://cordova.apache.org/docs/en/latest/cordova/events/events.html#deviceready
+
+
 document.addEventListener('deviceready', onDeviceReady, false);
 
 function onDeviceReady() {
@@ -31,6 +33,8 @@ function onDeviceReady() {
 
 
 
+
+/***** home.html slideshow *****/
 var slideIndex = 0;
 showSlides();
 
@@ -55,8 +59,7 @@ function showSlides() {
 
 
 
-
-
+/***** home.html chat form *****/
 function openForm() {
     /*displays form, and dont display chat icon button,  when form opens*/
     document.getElementById("myForm").style.display = "block";
@@ -98,4 +101,19 @@ function nutritionist() {
     document.getElementById("trainerChat").style.display = "none";
     document.getElementById("nutritionistChat").style.display = "none";
     document.getElementById("chatfaq").style.display = "none";
+}
+
+
+
+
+
+/***** log.html calendar *****/
+function openCalendar() {
+    /*show the calendar when today button is clicked*/
+    document.getElementById("calendar").style.display = "block";
+}
+
+function closeCalendar() {
+    /*hide the calendar when close button is clicked*/
+    document.getElementById("calendar").style.display = "none";
 }

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fitogram: Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Health, Fitness, Lifestyle">
+        <meta name="description" content="This is an app for Health and Fitness.">
+        <meta name="author" content="Gao WanQian">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, viewport-fit=cover">
+        <meta name=”robots” content=”noindex, nofollow”>
+        <meta name="color-scheme" content="light dark">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com 'unsafe-inline'">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700 ;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js" defer></script>
+        <script src="js/chart.js" defer></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Fitogram</h1>
+        </div>
+        <div class="logcontent_container">
+            <i class="fas fa-chevron-left"></i>
+            <i class="fas fa-chevron-right"></i>
+            <div class="logcalendarbtn">
+                <button class="calendarbtn" onclick="openCalendar()">Today</button>
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="calendar" id="calendar">
+                <div class="month">
+                    <button type="button" class="cancel" onclick="closeCalendar()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <span class="year">2021</span>
+                    <span class="day">Mon, 28 June</span>
+                </div>
+                <div class="dates">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                    <span class="dates_month">June 2021</span>
+                    <ul class="weekdays">
+                        <li>M</li>
+                        <li>T</li>
+                        <li>W</li>
+                        <li>T</li>
+                        <li>F</li>
+                        <li>S</li>
+                        <li>S</li>
+                    </ul>
+                    <ul class="day_num">  
+                        <li>1</li>
+                        <li>2</li>
+                        <li><span class="plan">3</span></li>
+                        <li><span class="plan">4</span></li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li><span class="plan">7</span></li>
+                        <li><span class="plan">8</span></li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li><span class="plan">12</span></li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li><span class="plan">17</span></li>
+                        <li><span class="plan">18</span></li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li><span class="plan">21</span></li>
+                        <li>22</li>
+                        <li><span class="plan">23</span></li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li><span class="active">28</span></li>
+                        <li>29</li>
+                        <li><span class="plan">30</span></li>
+                        <li>31</li>
+                    </ul>
+                    
+                    <span class="legend"></span>
+                    <span class="legendtxt">Exercised</span>
+                </div>
+            </div>
+            
+            
+            <div class="callogcount">
+                <span class="callogremain_dark">675 remaining&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="callogremain_light"></span>
+                <span class="calconsume">1050</span>
+                <span class="calburn">0</span>
+                <span class="calnet">1050</span>
+                <span class="calconsumetxt">Consumed</span>
+                <span class="calburntxt">Burned</span>
+                <span class="calnettxt">Net</span>
+            </div>
+            <div class="nutritionchart_container">
+                <h1>Nutrition Chart</h1>
+                <div class="chart">
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+            <div class="watercontainer">
+                <p>Water</p>
+                <span class="water_dark"></span>
+                <span class="water_dark"></span>
+                <span class="water_dark"></span>
+                <span class="water_dark"></span>
+                <span class="water_dark"></span>
+                <span class="water_dark"></span>
+                <span class="water_light"></span>
+                <span class="water_light"></span>
+                <span class="water_light"></span>
+                <span class="water_light"></span>
+            </div>
+            <div class="progress_container">
+                <p class="progress_text">You are 20% nearer to your goal!</p>
+                <div class="barContainer">
+                    <span class="bar1"></span>
+                    <span class="bar2"></span>
+                </div>
+                <p class="goalWeight">Goal: 55kg</p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footerNav">
+            <div class="footerCol">
+                <a href="log.html">
+                    <img src="img/log_dark.png">
+                </a>
+                <p>Logs</p>
+            </div>
+            <div class="footerCol">
+                <a href="explore.html">
+                    <img src="img/search_light.png">
+                </a>
+                <p>Explore</p>
+            </div>
+            <div class="footerCol">
+                <a href="home.html">
+                    <img src="img/home_light.png">
+                    <span class="homeBtn_inactive"></span>
+                </a>
+                <br>
+                <p>Home</p>
+            </div>
+            <div class="footerCol">
+                <a href="plan.html">
+                    <img src="img/plan_light.png">
+                </a>
+                <p>Plans</p>
+            </div>
+            <div class="footerCol">
+                <a href="profile.html">
+                    <img src="img/user_light.png">
+                </a>
+                <p>Profiles</p>
+            </div>
+        </div>
+    </footer>
+</html>
