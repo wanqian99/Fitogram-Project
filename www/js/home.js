@@ -35,24 +35,24 @@ function onDeviceReady() {
 
 
 /***** home.html slideshow *****/
-var slideIndex = 0;
-showSlides();
+var bannerIndex = 0;
+showBanner();
 
-function showSlides() {
+function showBanner() {
     var i;
-    var slides = document.getElementsByClassName("mySlides");
+    var banner = document.getElementsByClassName("banner");
     var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+    for (i = 0; i < banner.length; i++) {
+        banner[i].style.display = "none";  
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    bannerIndex++;
+    if (bannerIndex > banner.length) {bannerIndex = 1}    
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    banner[bannerIndex-1].style.display = "block";  
+    dots[bannerIndex-1].className += " active";
+    setTimeout(showBanner, 2000); // Change image every 2 seconds
 }
 
 
@@ -101,19 +101,4 @@ function nutritionist() {
     document.getElementById("trainerChat").style.display = "none";
     document.getElementById("nutritionistChat").style.display = "none";
     document.getElementById("chatfaq").style.display = "none";
-}
-
-
-
-
-
-/***** log.html calendar *****/
-function openCalendar() {
-    /*show the calendar when today button is clicked*/
-    document.getElementById("calendar").style.display = "block";
-}
-
-function closeCalendar() {
-    /*hide the calendar when close button is clicked*/
-    document.getElementById("calendar").style.display = "none";
 }
