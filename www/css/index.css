@@ -1571,6 +1571,154 @@ body {
     vertical-align: bottom;
 }
 
+
+
+
+
+/**********profile.html**********/
+
+/*content container*/
+.profilecontent_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin-top: 26%;
+    padding-bottom: 40%;
+    background-color: white;
+}
+
+/*profile container*/
+.profilecontent_container .profile {
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+
+/*profile image*/
+.profilecontent_container .profile img {
+    float: left;
+    width: 10%;
+    height: auto;
+    padding: 10px 15px;
+    border: 2px solid rgb(121,145,139);
+    border-radius: 50%;
+    margin: 5%;
+}
+
+/*profile header text*/
+.profilecontent_container .profile h1 {
+    float: left;
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    padding-top: 10px;
+}
+
+/*profile tabs container*/
+.profilecontent_container .profiletabs {
+    width: auto;
+    height: auto;
+    border: 3px solid rgb(241,208,176);
+}
+
+/*profile tabs container*/
+.profilecontent_container .profiletabs p {
+    display: inline-block;
+    width: 32%;
+    height: 55px;
+    vertical-align: middle;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    margin: 0;
+    text-align: center;
+}
+
+/*profile tab1*/
+.profilecontent_container .profiletabs .tab1 {
+    border-right: 3px solid rgb(241,208,176);
+}
+
+/*profile tab3*/
+.profilecontent_container .profiletabs .tab3 {
+    border-left: 3px solid rgb(241,208,176);
+}
+
+/*profile tab when active*/
+.profilecontent_container .profiletabs .active {
+    background-color: rgb(241,208,176);
+}
+
+/*profile tab1 info*/
+.profilecontent_container .profileinfo {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+/*profile tab1 text*/
+.profilecontent_container .profileinfo p {
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    margin: 0;
+}
+
+/*profile tab1 edit goal button*/
+.profilecontent_container .profileinfo button {
+    float: right;
+    margin-top: 3%;
+    border: 2px solid rgb(241,208,176);
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+}
+
+/*profile tab1 goal*/
+.profilecontent_container .profileinfo h1 {
+    font-size: 26px;
+    font-weight: 100;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    border-bottom: 2px solid rgb(241,208,176);
+}
+
+/*profile tab1 remidner container*/
+.profilecontent_container .profileinfo .reminder {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: top;
+    margin-right: 15%;
+}
+
+/*profile tab1 remidner content*/
+.profilecontent_container .profileinfo .reminder .plan{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    color: rgb(121,145,139);
+}
+
+/*profile tab1 friends img container*/
+.profilecontent_container .friends {
+    width: 100%;
+    height: auto;
+    padding-bottom: 55%;
+}
+
+/*profile tab1 friends img*/
+.profilecontent_container .friends img {
+    float: left;
+    width: 10%;
+    height: auto;
+    padding: 10px 15px;
+    border: 2px solid rgb(121,145,139);
+    border-radius: 50%;
+    margin-right: 3%;
+}
+
+
 /*dark green*/
 background-color: rgb(121,145,139);
 
