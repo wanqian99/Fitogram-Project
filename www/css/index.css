@@ -471,6 +471,7 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: auto;
+    border-radius: 10px;
 }
 
 /* Style and align the user icon */
@@ -1337,21 +1338,22 @@ body {
 
 /* Slideshow images */
 .explorecontent_container .slide img{
-    width: 60%;
+    width: 65%;
     height: 180px;
     margin: 2%;
+    border-radius: 10px;
 }
 
 /* Caption text */
 .explorecontent_container .slideText {
+    width: 30%;
     height: auto;
     float: right;
     margin-top: 2%;
-    margin-right: 2%;
     color: black;
     font-size: 20px;
     font-weight: bold;
-    text-align: left;
+    text-align: center;
     font-family: 'Open Sans', 'Open Sans Condensed', 'Roboto', 'sans-serif' ;
 }
 
@@ -1387,9 +1389,10 @@ body {
 
 /* Slideshow images */
 .explorecontent_container .slide2 img{
-    width: 60%;
+    width: 65%;
     height: 180px;
     margin: 2%;
+    border-radius: 10px;
 }
 
 
@@ -1459,6 +1462,7 @@ body {
     height: auto;
     margin: 5%;
     margin-bottom: 0;
+    border-radius: 10px;
 }
 
 /*Style the each workout text*/
@@ -1569,6 +1573,7 @@ body {
     margin-bottom: 4%;
     margin-right: 2%;
     vertical-align: bottom;
+    border-radius: 8px;
 }
 
 
@@ -1751,6 +1756,7 @@ body {
     width: 30%;
     height: auto;
     margin: 3%;
+    border-radius: 8px;
 }
 
 /*profile tab2 info text*/
