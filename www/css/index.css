@@ -452,7 +452,7 @@ body {
     width: 100%;
     height: auto;
     border: 2px solid rgb(121,145,139);
-    border-radius: 5%;
+    border-radius: 15px;
     margin-bottom: 5%;
 }
 
@@ -1530,7 +1530,7 @@ body {
     display: inline-flex;
     margin-top: 2%;
     margin-left: 10%;
-    margin-right: 23%;
+    margin-right: 25%;
     margin-bottom: 0%;
     font-size: 26px;
     font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
@@ -1717,6 +1717,76 @@ body {
     border-radius: 50%;
     margin-right: 3%;
 }
+
+/*profile tab2 info*/
+.profilecontent_container .profileRnW {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-bottom: 30%;
+}
+
+/*profile tab2 info title*/
+.profilecontent_container .profileRnW h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: 'Open Sans', 'Roboto', 'sans-serif';
+    color: rgb(121,145,139);
+    margin-bottom: 2%;
+}
+
+/*profile tab2 info recipe container*/
+.profilecontent_container .profileRnW .myrecipeContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(121,145,139);
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+
+/*profile tab2 info img*/
+.profilecontent_container .profileRnW .myrecipeContainer img {
+    width: 30%;
+    height: auto;
+    margin: 3%;
+}
+
+/*profile tab2 info text*/
+.profilecontent_container .profileRnW .myrecipeContainer p {
+    width: 60%;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+}
+
+/*profile tab2 info*/
+.profilecontent_container .profilepost {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-bottom: 30%;
+}
+
+/*profile tab3 make post button*/
+.profilecontent_container .profilepost button {
+    float: right;
+    margin-top: 3%;
+    border: 2px solid rgb(241,208,176);
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+}
+
+/*profile tab3 header*/
+.profilecontent_container .profilepost h1 {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', 'Roboto', 'sans-serif';
+    color: rgb(121,145,139);
+}
+
 
 
 /*dark green*/

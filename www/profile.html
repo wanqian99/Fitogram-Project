@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/index.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <script src="cordova.js"></script>
-        <script src="js/explore.js" defer></script>
+        <script src="js/profile.js" defer></script>
     </head>
     <body>
         <div class="header">
@@ -33,11 +33,14 @@
                 <h1>Hey there!</h1>
             </div>
             <div class="profiletabs">
-                <p class="tab1 active">My Info</p>
-                <p class="tab2">My recipes and workouts</p>
-                <p class="tab3">My Post</p>
+                <p class="tab1" id="tab1" onclick="activeTab1()">My Info</p>
+                <p class="tab2" id="tab2" onclick="activeTab2()">My recipes and workouts</p>
+                <p class="tab3" id="tab3" onclick="activeTab3()">My Post</p>
             </div>
-            <div class="profileinfo">
+            
+            
+            
+            <div class="profileinfo" id="profileinfo">
                 <p>Age: 25</p>
                 <p>Weight: 60kg</p>
                 <p>Height: 160cm</p>
@@ -71,6 +74,103 @@
                     <img src="img/user_dark.png">
                     <img src="img/user_dark.png">
                 </div>
+            </div>
+            
+            
+            
+            <div class="profileRnW" id="profileRnW">
+                
+                <h1>Recipes</h1>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                
+                <h1>Workout</h1>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="myrecipeContainer">
+                    <img src="img/phd.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="profilepost" id="profilepost">
+                <button>Make a post</button>
+                <h1>Your Activity</h1>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
+                <div class="posts">
+                    <div class="postAlign">
+                        <img src="img/phd.png" alt="post_img">
+                        <i class="fas fa-user-alt"></i>
+                        <p>Lorem</p>
+                    </div>
+                    <div class="postAlign">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dictum augue eget massa posuere consectetur. Vivamus in ante purus.</span>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </body>
