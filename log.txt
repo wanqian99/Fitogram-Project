@@ -1,0 +1,12 @@
+9a7990b v9, test passed
+3b9e907 v8, added text and images
+7e6b925 v7, completed basic layouts of all pages
+9187847 v6, profile.html tab1 completed
+6e5cdef v5, explore.html completed
+7e8c9d9 v4, completed log.html, starting on explore.html
+558840b v3, completed home page, home.html
+26518e5 V1, edited index, login, register page. Started on home.html, not completed
+73c5c48 Delete register.html
+a42edd3 created register.html
+2e4acc2 2nd draft, doing login page (login.html)
+0be8d08 1st draft, login type page
