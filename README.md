@@ -1,4 +1,4 @@
-# Fitogram-Project
+# Fitogram
 Uol Agile Management Projects CM2020<br>
 Done by: Gao WanQian<br>
 
