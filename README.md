@@ -6,7 +6,8 @@ Git repository link: https://github.com/wanqian99/Fitogram-Project.git
 
 ## Project Inspiration:
 This project’s inspiration comes from our current situation (year 2020), the pandemic era. During these though times, many countries have closed down gyms, and implemented quarantine orders to ease down the spread of the pandemic. People have therefore been unable to work out as usual, or they might have gained weight from the lack of daily exercises due to the lack of outdoor activities. Also, individuals might not always be able to afford food deliveries, and might need to prepare their meal on their own. Youngsters, or to-be-adults, might be the age group having the most trouble coping with this. With the app, it can recommend healthy recipes, that suit their diets needs, with videos on how to prepare their meal. I have detailed all my research, surveys and findings, and decided on some of the features that will benefit my users, and plan to implement it into my software.
-(Refer to "report/ASP Final" for full project report)
+
+(Refer to "report/ASP Final.pdf" for full project report)
 
 ## User Guide:
 This Fitogram Application is done with Apache Cordova, using HTML, CSS, Javascript.<br><br>
